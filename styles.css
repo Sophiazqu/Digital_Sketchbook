@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 99%;
+    margin: auto;
+    padding: 35px 0;
+}
+
+.logo {
+    width: 60px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 60px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+.intro-paragraph {
+    color: #fff;
+    font-size: 15px;
+    line-height: 15px;
+    line-height: 43px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+button a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+button span {
+    background: #fff;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    color: #000;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s, filter 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card1 {
+    background-image: url(images/pic-1.png);
+}
+
+.card2 {
+    background-image: url(images/pic-2.png);
+}
+
+.card3 {
+    background-image: url(images/pic-3.png);
+}
+
+.card4 {
+    background-image: url(images/pic-4.png);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/ello.png');
+    background-size: cover; 
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+}
+
+
+.card:hover::before {
+    opacity: 0; 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    filter: brightness(1); 
+}
+
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    position: absolute;
+    bottom: 85p%;
+    left: 3%;
+    opacity: 0; 
+    transition: opacity 0.5s;
+    font-size: 15px;
+}
+
+.card:hover h5 {
+    opacity: 1; 
+}
+
+.card-paragraph {
+    text-shadow: 0 0 5px #000;
+    font-size: 8px;
+    position: absolute;
+    bottom: 60%;
+    left: 1%;
+    opacity: 0; 
+    transition: opacity 0.5s;
+    color: #fff;
+    font-size: 13px;
+    background-color: black;
+    background-size: 50px,15px;
+}
+
+.card:hover p {
+    opacity: 1; 
+}
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+
+.button button span {
+    background: #fff;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.button button:hover span {
+    width: 100%;
+}
+
+.button button:hover {
+    color: #000;
+}

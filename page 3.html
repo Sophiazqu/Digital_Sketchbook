@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="general.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo" alt="Sketchbook">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="page 3.html">Create</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" alt="Paint Palette">
+        </div>    
+<canvas id="canvas"></canvas>
+    <div class="nav">
+        <div class="clr" data-clr="#060000"></div>
+        <div class="clr" data-clr="#d67356"></div>
+        <div class="clr" data-clr="#170a40"></div>
+        <div class="clr" data-clr="#6c0c72"></div>
+        <div class="clr" data-clr="#3c4b36"></div>
+        <div class="clr" data-clr="#58100f"></div>
+        <div class="clr" data-clr="#c6580b"></div>
+        <div class="clr" data-clr="#dcb082"></div>
+        <button class="clear"><span></span>Clear</button>
+        <button class="save"><span></span>Save</button>
+        <input type="color" value="#FFFFFF" id="favcolor">
+        <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="10" oninput="ageOutputId.value = ageInputId.value">
+        <output id="ageOutputId"></output>
+        <div class="emoji">🎨</div>
+    </div>
+</body>
+</html>
